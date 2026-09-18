@@ -18,6 +18,9 @@
 		"main": [
 			"net.fire_eyes.lineage.Lineage"
 		],
+		"client": [
+			"net.fire_eyes.lineage.LineageClient"
+		],
 		"fabric-datagen": [
 			"net.fire_eyes.lineage.LineageDataGenerator"
 		]
