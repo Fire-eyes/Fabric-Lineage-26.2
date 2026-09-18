@@ -16,9 +16,11 @@ public class LineageClient implements ClientModInitializer {
 
     public static void onEndTick(Minecraft client) {
         while(ModKeyMappings.PRIMARY_ACTIVE_ABILITY.consumeClick()) {
+            assert client.player != null;
             client.player.sendSystemMessage(Component.literal("I just pressed the Primary Key (Default: Z)"));
         }
         while(ModKeyMappings.SECONDARY_ACTIVE_ABILITY.consumeClick()) {
+            assert client.player != null;
             client.player.sendSystemMessage(Component.literal("I just pressed the Secondary Key (Default: G)"));
         }
     }
