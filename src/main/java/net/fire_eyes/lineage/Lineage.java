@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fire_eyes.lineage.creativemodetab.ModCreativeModeTabs;
 import net.fire_eyes.lineage.item.ModItems;
+import net.fire_eyes.lineage.networking.ModPackets;
 import net.minecraft.resources.Identifier;
 
 import org.slf4j.Logger;
@@ -18,6 +19,8 @@ public class Lineage implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 		ModCreativeModeTabs.registerModCreativeModeTabs();
 		ModItems.registerModItems();
+
+		ModPackets.registerPackets();
 	}
 
 }

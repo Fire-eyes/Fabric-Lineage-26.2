@@ -1,0 +1,11 @@
+*File that holds any long-winded information that I find helpful to Project understanding.*
+
+        # Networking: Codec Crash Course #
+> There are two (2) Types of Codecs:
+    |-> Codec && StreamCodec
+> Codec: What do?
+    |-> Construct a Java Object from a JSON file.   {JSON => Java Object}
+    |-> Write a java Object to a JSON.   {Java Object => JSON}
+> StreamCodec: What do?
+    |-> Turn a Java Object into Bytes for Network Traffic.  {Java Object => Bytes}
+    |-> Write Bytes into the Java Object after Network Traffic.   {Java Bytes => Java Object}

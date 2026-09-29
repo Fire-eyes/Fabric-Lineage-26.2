@@ -2,7 +2,9 @@ package net.fire_eyes.lineage;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
+import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.fire_eyes.lineage.keymapping.ModKeyMappings;
+import net.fire_eyes.lineage.networking.packet.TestPayloadC2S;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.chat.Component;
 
@@ -15,6 +17,7 @@ public class LineageClient implements ClientModInitializer {
     }
 
     public static void onEndTick(Minecraft client) {
+        // We are on the CLIENT here
         while(ModKeyMappings.PRIMARY_ACTIVE_ABILITY.consumeClick()) {
             assert client.player != null;
             client.player.sendSystemMessage(Component.literal("I just pressed the Primary Key (Default: Z)"));
@@ -22,6 +25,9 @@ public class LineageClient implements ClientModInitializer {
         while(ModKeyMappings.SECONDARY_ACTIVE_ABILITY.consumeClick()) {
             assert client.player != null;
             client.player.sendSystemMessage(Component.literal("I just pressed the Secondary Key (Default: G)"));
+            ClientPlayNetworking.send(new TestPayloadC2S("Fire_eyes", 222));
         }
     }
+
+
 }
