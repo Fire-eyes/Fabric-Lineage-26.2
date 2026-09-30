@@ -1,5 +1,5 @@
 // 26.2	-999999999-01-01T00:00:00	Lineage/Model Definitions
-4890f889b1283cffb1ae4441a483ba6a3309d70c assets/lineage/items/lineage_line.json
-77f04e93dcbcf1e67c63aa92d0e96ac38ae12e8b assets/lineage/items/misc_second_item.json
-fb1ae7560e479fef14b3456f7abd8ddd644a9424 assets/lineage/models/item/lineage_line.json
-87f792840622ad445fadc2273991af461877afc6 assets/lineage/models/item/misc_second_item.json
+91d75baa76c1a468e04cad96c2bf2e8179ffc804 assets/lineagemod/items/lineage_line.json
+c38721d9478fac19cffdd50ff8af4841e81b2c7f assets/lineagemod/items/misc_second_item.json
+2bc900da0ebd77975d8ecaf5c03eb2e9ef273eeb assets/lineagemod/models/item/lineage_line.json
+974c3b26b6589b20be417bd8e03ba5a9e25d6fca assets/lineagemod/models/item/misc_second_item.json

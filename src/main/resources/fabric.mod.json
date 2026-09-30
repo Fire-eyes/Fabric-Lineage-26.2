@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "lineage",
+	"id": "lineagemod",
 	"version": "${version}",
 	"name": "Lineage",
 	"description": "This is an example description! Tell everyone what your mod is about!",
@@ -12,21 +12,21 @@
 		"sources": ""
 	},
 	"license": "MIT-License",
-	"icon": "assets/lineage/icon.png",
+	"icon": "assets/lineagemod/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.fire_eyes.lineage.Lineage"
+			"net.fire_eyes.lineagemod.LineageMod"
 		],
 		"client": [
-			"net.fire_eyes.lineage.LineageClient"
+			"net.fire_eyes.lineagemod.LineageClient"
 		],
 		"fabric-datagen": [
-			"net.fire_eyes.lineage.LineageDataGenerator"
+			"net.fire_eyes.lineagemod.LineageDataGenerator"
 		]
 	},
 	"mixins": [
-		"lineage.mixins.json"
+		"lineagemod.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.19.5",
