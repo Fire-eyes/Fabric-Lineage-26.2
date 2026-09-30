@@ -23,6 +23,11 @@ public class ModItems {
                 function.apply(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Lineage.MOD_ID, name)))));
     }
 
+    //Helper Function used to get the Resource Keys used for Tags
+    public static ResourceKey<Item> getRK(Item item) {
+        return BuiltInRegistries.ITEM.getResourceKey(item).get();
+    }
+
     public static void registerModItems() {
         Lineage.LOGGER.info("Registering Mod Items for: " + Lineage.MOD_ID);
 

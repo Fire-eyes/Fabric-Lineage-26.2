@@ -18,7 +18,7 @@ public class ModKeyMappings {
                     GLFW.GLFW_KEY_G, KeyMapping.Category.MISC)
     );
 
-    public static void register(){
+    public static void register() {
         Lineage.LOGGER.info("Registering ModKeyMappings for " + Lineage.MOD_ID);
     }
 }
