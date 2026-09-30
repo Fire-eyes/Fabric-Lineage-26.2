@@ -17,7 +17,7 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider registries) {
         tag(ModTags.Items.DIET_CARNIVORE)
-                .addTag(ItemTags.MEAT)
+                .addOptionalTag(ItemTags.MEAT) //Using '.addOptionalTag' due-to Vanilla Tags are not yet instantiated
                 .add(ItemIds.COD)
                 .add(ItemIds.COOKED_COD)
                 .add(ItemIds.COOKED_SALMON)
