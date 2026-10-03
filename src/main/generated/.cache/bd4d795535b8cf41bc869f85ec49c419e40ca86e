@@ -1,5 +1,8 @@
 // 26.2	-999999999-01-01T00:00:00	Lineage/Model Definitions
+2e918515ce9a6be3beed4576248b975489dab0ca assets/lineagemod/blockstates/fluorite_block.json
+9b43f49dcb1492ceb0d3fccd1750b3d5cc360a9e assets/lineagemod/items/fluorite_block.json
 91d75baa76c1a468e04cad96c2bf2e8179ffc804 assets/lineagemod/items/lineage_line.json
 c38721d9478fac19cffdd50ff8af4841e81b2c7f assets/lineagemod/items/misc_second_item.json
+13aa3a541998ad6d6b4fa48dfce1367fe13cb5b5 assets/lineagemod/models/block/fluorite_block.json
 2bc900da0ebd77975d8ecaf5c03eb2e9ef273eeb assets/lineagemod/models/item/lineage_line.json
 974c3b26b6589b20be417bd8e03ba5a9e25d6fca assets/lineagemod/models/item/misc_second_item.json

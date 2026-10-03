@@ -2,6 +2,7 @@ package net.fire_eyes.lineagemod.creativemodetab;
 
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.fire_eyes.lineagemod.LineageMod;
+import net.fire_eyes.lineagemod.block.ModBlocks;
 import net.fire_eyes.lineagemod.item.ModItems;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -14,9 +15,10 @@ public class ModCreativeModeTabs {
 
     public static CreativeModeTab LINEAGE_ITEM_TAB = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
             Identifier.fromNamespaceAndPath(LineageMod.MOD_ID, "lineage_items"),
-            FabricCreativeModeTab.builder().icon(() -> new ItemStack(ModItems.LINEAGE_LINE))
-                    .title(Component.translatable("creativetab.lineage.items"))
+            FabricCreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.FLUORITE_BLOCK))
+                    .title(Component.translatable("creativetab.lineagemod.items"))
                     .displayItems((parameters, output) ->{
+                        output.accept(ModBlocks.FLUORITE_BLOCK);
                         output.accept(ModItems.LINEAGE_LINE);
                         output.accept(ModItems.MISC_SECOND_ITEM);
                     }).build());

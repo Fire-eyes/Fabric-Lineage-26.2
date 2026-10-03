@@ -3,6 +3,7 @@ package net.fire_eyes.lineagemod;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.player.UseItemCallback;
+import net.fire_eyes.lineagemod.block.ModBlocks;
 import net.fire_eyes.lineagemod.creativemodetab.ModCreativeModeTabs;
 import net.fire_eyes.lineagemod.item.ModItems;
 import net.fire_eyes.lineagemod.networking.ModPackets;
@@ -22,8 +23,10 @@ public class LineageMod implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("Hello Fabric world!");
 		//Register Stuff
-		ModCreativeModeTabs.registerModCreativeModeTabs();
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+
+		ModCreativeModeTabs.registerModCreativeModeTabs();
 		ModPackets.registerPackets();
 
 		//Locate Lineage File Path

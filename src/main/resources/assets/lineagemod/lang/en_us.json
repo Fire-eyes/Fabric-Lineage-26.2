@@ -1,5 +1,8 @@
 {
   "item.lineagemod.lineage_line": "Lineage Line",
   "item.lineagemod.misc_second_item": "Misc Second Item",
+
+  "block.lineagemod.fluorite_block": "Fluorite Block",
+
   "creativetab.lineagemod.items": "Lineage Items"
 }
